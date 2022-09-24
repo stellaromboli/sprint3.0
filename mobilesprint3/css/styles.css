@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+:root{
+	--ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+	--clr-white: #f5f5f5;
+	--clr-skycian: #e0ffff;
+	--clr-skyblue: #48d1cc;
+	--clr-bluegray: #d9e4ec;
+	--clr-bluegroto: #6aabd2;
+	--clr-bluemistyblue: #b7cfdc;
+	--clr-bluble: #385e72;
+	--clr-glass: #f2ab9c;
+	--clr-news: #9370db;
+}
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+body{
+	background-color: var(--clr-bluegray);
+	font-family: var(--ff-primary);
+}
+a,
+a:hover,
+a:active,
+a:link,
+a:visited{
+	text-decoration: none ;
+	color: black;
+}
+hr{
+	border: none;
+	background-color: var(--clr-bluegroto);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+
+}
+p{
+	line-height: 21.82px;
+	padding: 0 10px;
+}
+.section__titulo{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+/**********************************/
+/* 2. Menu
+/**********************************/
+.menu-bg{
+	background-color: var(--clr-bluegroto);
+}
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.menu__logo{
+	margin: 10px;
+}
+
+.nav__list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.nav__link{
+	padding: 20px 10px;
+}
+/**********************************/
+/* 3. Header
+/**********************************/
+.intro{
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+/**********************************/
+/* 4 Quem somos
+/**********************************/
+.somos{
+	max-width: 960px;
+	margin: 0 auto;
+	
+}
+.somos-c{
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.somos-c__texto{
+	flex: 6 1 160px;
+}
+
+.somos-c__img{
+	flex: 1 1 250px;
+}
+/**********************************/
+/* 5 O que oferecemos
+/**********************************/
+.oferecemos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.oferecemos-c{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.oferecemos-b{
+	width: 280px;
+	margin: 0 20px;
+}
+.oferecemos__titulo{
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 10px 0 5px 0;
+}
+
+/**********************************/
+/*.6 Contato
+/**********************************/
+.contato{
+	background-color: var(--clr-glass);
+}
+.contato-c{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contato-info{
+	flex: 1 1 260px;
+	padding: 10px;
+}
+.contato-info__titulo{
+	font-size: 2.62rem;
+	font-weight: bold;
+}
+.contato-info-descricao{
+	font-style: italic;
+}
+.contato-form__input{
+	font-size: 1.25rem;
+	width: 325px;
+	color: black;
+	font-style: italic;
+	font-family: var(--ff-primary);
+	border: 10px solid var(--clr-bluble);
+	padding: 10px;
+	margin: 0;
+	border-radius: 0px;
+	
+
+}
+.contato-form__submit{
+	flex: 1 1 260px;
+	width: 325px;
+	font-family: var(--ff-primary);
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: var(--clr-bluegray);
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0;
+	border-radius: 0px;
+}
+
+
